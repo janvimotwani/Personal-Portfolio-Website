@@ -41,3 +41,43 @@
 </body>
 </html>
 # Personal-Portfolio-Website
+
+
+//CSS 
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    /* Style your header here */
+}
+
+main {
+    /* Style the main content area here */
+}
+
+section {
+    /* Style each section */
+}
+
+footer {
+    /* Style the footer here */
+}
+
+//script.js
+// Smooth scrolling for navigation links
+const navLinks = document.querySelectorAll('header a');
+
+navLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetSection = document.querySelector(link.getAttribute('href'));
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+    });
+});
+
+// Add any additional JavaScript interactivity here
+
